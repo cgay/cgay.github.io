@@ -1,0 +1,4 @@
+baseURL = "http://cgay.github.io/"
+languageCode = "en-us"
+title = "cgay's random notes"
+theme = "ananke"
