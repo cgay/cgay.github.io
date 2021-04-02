@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on cgay&#39;s random notes</title>
+    <link>http://cgay.github.io/posts/</link>
+    <description>Recent content in Posts on cgay&#39;s random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Apr 2021 13:35:01 +0000</lastBuildDate><atom:link href="http://cgay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://cgay.github.io/posts/first-post/</link>
+      <pubDate>Fri, 02 Apr 2021 13:35:01 +0000</pubDate>
+      
+      <guid>http://cgay.github.io/posts/first-post/</guid>
+      <description>This is my new blogospace, using GitHub Pages and Hugo to generate a simple static site. I have a few posts still at my old Wordpress blog which I&amp;rsquo;m still not sure if I&amp;rsquo;ll migrate over here. We&amp;rsquo;ll see how it goes.
+Meanwhile, since I&amp;rsquo;ll be mostly writing about geeky Dylan stuff, let&amp;rsquo;s see if Hugo knows how to highlight Dylan code&amp;hellip;
+define method factorial (n == 0) 1 end; // called when n = 0 define method factorial (n == 1) 1 end; // called when n = 1 define method factorial (n) // called for any other n n * factorial(n - 1) end; Nope, so let&amp;rsquo;s fix that!</description>
+    </item>
+    
+  </channel>
+</rss>
