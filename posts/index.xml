@@ -19,5 +19,15 @@ Since I&amp;rsquo;ll be mostly writing about geeky Dylan stuff, let&amp;rsquo;s 
 1 2 3 4 5 6 7 8 9 10 define class &amp;lt;point&amp;gt; (&amp;lt;object&amp;gt;) slot point-x :: &amp;lt;integer&amp;gt;; slot point-y :: &amp;lt;integer&amp;gt;; end; define variable *everything* = &amp;#34;everything&amp;#34;; define method factorial (n == 0) 1 end; // called when n = 0 define method factorial (n == 1) 1 end; // called when n = 1 define method factorial (n) // called for any other n n * factorial(n - 1) end; Hmm.</description>
     </item>
     
+    <item>
+      <title>Millennium Leaper</title>
+      <link>https://cgay.github.io/posts/millennium-leaper/</link>
+      <pubDate>Fri, 18 Dec 2009 18:25:09 +0000</pubDate>
+      
+      <guid>https://cgay.github.io/posts/millennium-leaper/</guid>
+      <description>(This post was converted from the original with minimal changes. Some links were removed because the targets were missing and I replaced the section about the Apple2Oasis emulator with the in-browser scullinsteel emulator.)
+In 1982-3 I wrote an arcade style game for the Apple II called Millenium Leaper and sold it to a disk magazine called Softdisk. I didn&amp;rsquo;t think much about it again until in 2007 I was having a conversation with someone about old computer games and it occurred to me to search for references to it on the net.</description>
+    </item>
+    
   </channel>
 </rss>

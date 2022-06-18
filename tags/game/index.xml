@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>game on cgay&#39;s random notes</title>
+    <link>https://cgay.github.io/tags/game/</link>
+    <description>Recent content in game on cgay&#39;s random notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2022 Carl Gay</copyright>
+    <lastBuildDate>Fri, 18 Dec 2009 18:25:09 +0000</lastBuildDate><atom:link href="https://cgay.github.io/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Millennium Leaper</title>
+      <link>https://cgay.github.io/posts/millennium-leaper/</link>
+      <pubDate>Fri, 18 Dec 2009 18:25:09 +0000</pubDate>
+      
+      <guid>https://cgay.github.io/posts/millennium-leaper/</guid>
+      <description>(This post was converted from the original with minimal changes. Some links were removed because the targets were missing and I replaced the section about the Apple2Oasis emulator with the in-browser scullinsteel emulator.)
+In 1982-3 I wrote an arcade style game for the Apple II called Millenium Leaper and sold it to a disk magazine called Softdisk. I didn&amp;rsquo;t think much about it again until in 2007 I was having a conversation with someone about old computer games and it occurred to me to search for references to it on the net.</description>
+    </item>
+    
+  </channel>
+</rss>

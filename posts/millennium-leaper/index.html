@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Carl Gay">
+<meta name="description" content="An Apple II game I wrote a long time ago">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Millennium Leaper"/>
+<meta name="twitter:description" content="An Apple II game I wrote a long time ago"/>
+
+<meta property="og:title" content="Millennium Leaper" />
+<meta property="og:description" content="An Apple II game I wrote a long time ago" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cgay.github.io/posts/millennium-leaper/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2009-12-18T18:25:09+00:00" />
+<meta property="article:modified_time" content="2009-12-18T18:25:09+00:00" />
+
+
+
+
+  <title>cgay&#39;s random notes</title>
+
+  
+  <link rel="canonical" href="https://cgay.github.io/posts/millennium-leaper/">
+  
+
+  <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.100.2" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      cgay&#39;s random notes
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://cgay.github.io/posts/millennium-leaper/">
+              Millennium Leaper
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2009-12-18T18:25:09Z">
+                December 18, 2009
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/apple-ii/">apple-ii</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/retro/">retro</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/programming/">programming</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>(This post was converted from <a href="https://carlgay.wordpress.com/2009/12/24/millenium-leaper/">the
+original</a> with
+minimal changes. Some links were removed because the targets were missing and I
+replaced the section about the Apple2Oasis emulator with the in-browser
+scullinsteel emulator.)</p>
+<p>In 1982-3 I wrote an arcade style game for the Apple II called Millenium Leaper
+and sold it to a disk magazine called
+<a href="https://en.wikipedia.org/wiki/Softdisk">Softdisk</a>. I didn&rsquo;t think much about
+it again until in 2007 I was having a conversation with someone about old
+computer games and it occurred to me to search for references to it on the
+net. To my utter surprise I found that it could be downloaded in a bundle with
+another game from the same period called Beer Run, and I could run it on
+Windows in an Apple II simulator. I didn&rsquo;t do much with it since I was involved
+with a fun project at work. It came up in conversation again recently and I
+decided to write up my experiences developing the game, and to document the
+game itself. This effort is mainly for my own satisfaction in recalling old
+memories, but I hope it will be of some interest to others as well.</p>
+<p>In 1982 my dad bought an <a href="http://en.wikipedia.org/wiki/Apple_II_Plus">Apple
+II+</a> computer. I was just out of
+high-school and had a job washing dishes while I figured out what to do with my
+life (although I didn&rsquo;t realize that&rsquo;s what was going on at the time) so I had
+time to burn. My dad showed me how to do a few simple graphics tricks in
+<a href="https://mirrors.apple2.org.za/Apple%20II%20Documentation%20Project/Software/Languages/Applesoft%20BASIC/Manuals/Applesoft%20II%20BASIC%20Programming%20Reference%20Manual.pdf">Applesoft
+BASIC</a>
+and before too long I relocated the computer from his room to mine.</p>
+<p>Pretty quickly it became obvious that there was no way to do the types of
+things I was seeing in the video arcades and in some of the more advanced Apple
+II games of the time with Applesoft BASIC. I had to use something that would
+allow me to write directly to the HI-RES video memory and I ended up getting a
+copy of the LISA assembler by Randy Hyde and teaching myself 6502 assembly
+language. (Some time later I contributed code to that assembler but for the
+life of me I can&rsquo;t remember what my code did. I received some paltry royalties
+for my contributions&hellip;I have to wonder if Randy was just being kind to a young
+kid since I&rsquo;m sure he could have easily written the same thing himself.) I&rsquo;m
+not sure if there were any C compilers available at the time for the Apple II,
+but I didn&rsquo;t know enough to look for them if there were.</p>
+<p>I embarked on what turned out to be an almost two-year project to learn 6502
+and write a video game. Many of the details of that process elude me. I
+remember learning some basic techniques like a routine to convert hex to
+decimal, then experimenting endlessly to create some cool sounds on the speaker
+($C030). There was a mode in which you could display hi-res graphics on the top
+3/4 of the screen and text on the bottom 1/4, and I used this to manually
+modify memory and see what happened to the graphic display. For example I might
+store #$81 at location $4000 and see the pixel at x=7, y=0 turn green. I played
+around with this enough to start writing some graphics routines like drawing
+lines and circles. Eventually I wrote a very simple graphics editor with which
+to create images and save them.</p>
+<h2 id="the-game">
+  The Game
+  <a class="heading-link" href="#the-game">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>At the arcade I was heavily into Robotron, Donkey Kong, Defender and Joust, and
+I basically set off to figure out how to make something similar to Donkey Kong
+because it seemed the most doable on an Apple II+. Here&rsquo;s a description of
+Millenium Leaper, approximately in the order the screens appear during play.</p>
+<p><img src="/images/ml01-how-to-play.jpg" alt="How to play"></p>
+<p>The very first screen you see upon startup is this little beauty. Apparently it
+never occurred to me that making the title page appear first might be a good
+idea.</p>
+<p><img src="/images/ml02-baud-bandits.jpg" alt="Baud Bandits pirating info"></p>
+<p>Should I call the cops? No, seriously, kudos to whoever preserved this stuff!</p>
+<p><img src="/images/ml03-key-bindings.jpg" alt="Key bindings"></p>
+<p>Instructions.</p>
+<p><img src="/images/ml04-hints.jpg" alt="More instructions"></p>
+<p>More instructions.</p>
+<p><img src="/images/ml05-title-page.jpg" alt="Title page"></p>
+<p>The title page is animated. The title appears one letter at a time as the
+aliens run back and forth underneath it making noise.</p>
+<p><img src="/images/ml06-level1-demo.jpg" alt="Level one demo"></p>
+<p>The game enters a demo mode where it shows each level in action, while it waits
+for you to remember that you have to hit the &lsquo;1&rsquo; or &lsquo;2&rsquo; key to select the
+number of players.</p>
+<p><img src="/images/ml08-transition.jpg" alt="Transition to level 1"></p>
+<p>The game commences. Why is the timer set at 9990 instead of 9999? I have no idea!</p>
+<p><img src="/images/ml09-level1-jump.jpg" alt="Level 1 jump"></p>
+<p>Level 1 &ndash; You control the little man, who runs around trying to collect the
+numbers 1..9 and finally 0 (because 0 comes after 9 of course). The green
+blocks disappear if you run over them, which can be used to isolate the aliens
+since they can&rsquo;t cross the holes. But if you isolate an alien and later a
+number appears in that area it can be hard to get the number. The hole in the
+bottom floor moves left to right, which makes it difficult to jump when running
+left to right.</p>
+<p><img src="/images/ml14-up-elevator.jpg" alt="Going up to the next level in the elevator"></p>
+<p>On completion of a level, the screen scrolls down and an elevator drops down
+(with attending sound effects) to take you up to the next level.</p>
+<p><img src="/images/ml13-level3-demo.jpg" alt="Level 2"></p>
+<p>Level 2 — Run up to get the numbers while jumping the rolling barrels. The
+barrels may fall off the end of each ramp or decide to come down the ladders.</p>
+<p>Level 3 is pretty much the same as level 1 except that the floors “slide” left
+or right as though they were conveyor belts.  It is probably the hardest level
+to get past, and the least well designed.  The running of the little man is
+extremely choppy, so it can be hard to transition to the ladders.  I think I
+was trying too hard to come up with something a bit different that didn’t
+require a huge amount of additional coding.</p>
+<p><img src="/images/ml07-level2-demo.jpg" alt="Level 3"></p>
+<p>Level 5 — Getting a bit random now, by mixing up barrels and ramps and
+whatnot. I haven’t been able to make it to this level in the emulator yet, but
+if I recall correctly one of the main difficulties was needing to jump between
+the left and right sides and having to open the parachute quickly.</p>
+<p><img src="/images/ml15-game-over.jpg" alt="Game Over screen"></p>
+<p><img src="/images/ml12-top-five.jpg" alt="Top Scores screen"></p>
+<p>High scores.  I don’t think they were saved to disk.</p>
+<h3 id="implementation">
+  Implementation
+  <a class="heading-link" href="#implementation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>I don’t recall a lot of specifics about the implementation except that I didn’t
+know anything at all about game design or good coding style. Abstract data
+types? Functional decomposition? Never heard of them. You might have noticed
+that all the surfaces on which the aliens and the little man run are solid
+white. That’s because I used that to detect where the floors were rather than
+encoding any sort of model of the virtual world into data structures. That,
+plus a few rules such as the maximum height of a jump and bouncing off the edge
+of the screen were all there was. Spaghetti code, 6502 assembly style.</p>
+<h2 id="commercial-success">
+  Commercial Success?
+  <a class="heading-link" href="#commercial-success">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Sometime in 1983 I managed to sell Millenium Leaper to
+<a href="https://en.wikipedia.org/wiki/Softdisk">Softdisk</a> magazine for about $300.
+That probably works out to about $0.50 per day or around $0.08 per hour.  In
+1984 Softdisk <a href="/images/softdisk-offer.jpg">offered me a job</a> as a game
+programmer and flew me down to Shreveport, LA for a look see.  Despite the fact
+that I was still working on the loading dock at Symbolics at that point, I
+turned them down.  I was fascinated by the Lisp machines at ‘bolics and I just
+couldn’t imagine living in Shreveport at the time, though I often wondered how
+things might have turned out if I had.</p>
+<h2 id="play-the-game">
+  Play the Game!
+  <a class="heading-link" href="#play-the-game">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>I found this in-browser Apple ][ emulator and asked them to put Millennium
+Leaper in it. Here&rsquo;s a direct link to play the game on
+<a href="https://www.scullinsteel.com/apple2/#millenium">scullinsteel.com</a>. Press <code>R</code>
+(for run) followed by <code>C</code> to start Millennium Leaper.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <script src="https://utteranc.es/client.js"
+        repo="https://github.com/cgay/cgay.github.io"
+        issue-term="pathname"
+        label="feedback"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+<footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+     Carl Gay 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+  
+  <script src="/js/coder.min.f411a1043e37c7c14dfb03f4d94d60d9ee69cfa413b16d0fd4f28695babb82bb.js" integrity="sha256-9BGhBD43x8FN&#43;wP02U1g2e5pz6QTsW0P1PKGlbq7grs="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
